@@ -7,11 +7,15 @@ module.exports = {
     './app/javascript/**/*.js',
     './app/views/**/*.{erb,haml,html,slim}'
   ],
+
+  variants: {
+    overflow: ['responsive', 'hover', 'hidden'],
+
   theme: {
     extend: {
       fontFamily: {
         sans: ['Inter var', ...defaultTheme.fontFamily.sans],
-
+      },
       fontSize: {
         'xs': '.75rem',
         'sm': '.875rem',
@@ -26,15 +30,32 @@ module.exports = {
         '6xl': '4rem',
         '7xl': '5rem',
         '18xl': '18.75rem',
+      },
+      spacing: {
+      '3/4': '75%',
+      '1': '0.25rem',
+      '64': '16rem',
+      '96': '24rem',
+      '128': '32rem',
+      '144': '36rem',
 
-        spacing: {
+      'p-5': '3rem',
+      'p-12': '3rem',
+      },
+      height: {
+        '3/4': '75%',
+        '1': '0.25rem',
+        '64': '16rem',
+        '96': '24rem',
+        '128': '32rem',
         '144': '36rem',
-        '3/4': '75%',
-
-        height: {
-        'h-96': '24rem',
-        'h-144': '36rem',
-        '3/4': '75%',
+  
+        'p-5': '3rem',
+        'p-12': '3rem',
+        },
+      inset: {
+        '1/2': '50%'
+      },
 
       },
     },
@@ -45,7 +66,4 @@ module.exports = {
     require('@tailwindcss/aspect-ratio'),
     require('@tailwindcss/typography'),
   ]
-}
-}
-}
 }

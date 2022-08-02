@@ -23,10 +23,10 @@ default: &default
 
 development:
   <<: *default
-  database: portfolio_website_development
+  database: KPInext_development
   host: 127.0.0.1
-  username: portfolio_website
-  password: admin123
+  username: KPInext
+  password: 2944Troypis40!
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
   # When left blank, postgres will use the default role. This is
@@ -59,7 +59,7 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: portfolio_website_test
+  database: KPInext_development
 
 # As with config/credentials.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -83,6 +83,6 @@ test:
 #
 production:
   <<: *default
-  database: portfolio_website_production
-  username: portfolio_website
-  password: <%= ENV["PORTFOLIO_WEBSITE_DATABASE_PASSWORD"] %>
+  database: KPInext_production
+  username: KPInext
+  password: 2944Troypis40!
